@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <link href='/css/dashboard.css' rel='stylesheet' type='text/css'>
+<h1>WELCOME, <span th:text="${test}"></h1>
+<div class="top_row">
+
+    <a href="/shopsList"><img class="shopsList" src="/img/shopIcon.png" style="height: 250px; width: 250px;"></a>
+    
+    <a href="/inventory" class="inventory" ><img src="/img/inventory.png" style="height: 250px; width: 250px;"></a>
+
+</div>
+<div  class="down_row">
+    <a href="/employeeList" ><img class="employeeList" src="/img/employee.png" style="height: 250px; width: 250px;"></a>
+  
+    <a href="/employeeList" ><img class="truck" src="/img/truck.png" style="height: 250px; width: 250px;"></a>
+
+</div>
+</body>
+</html>

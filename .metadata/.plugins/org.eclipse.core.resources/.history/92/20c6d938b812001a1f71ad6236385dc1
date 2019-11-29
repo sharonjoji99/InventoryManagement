@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<link href='/css/ownerLogin.css' rel='stylesheet' type='text/css'>
+
+<form method="post" action="/ownerLogin">
+<div class="box">
+<h1>Owner Login</h1>
+
+<input type="text"  name="username" placeholder="Username" class="email" />
+  
+<input type="password" name="password"  placeholder="Password"   class="email" />
+ 
+<input class="btn" type="submit" value="Submit">
+ 
+<a style="text-decoration: none" class="btn" href="/signupOwner">Sign-Up</a>
+
+<div th:if="${check}"==0>
+   
+</div>
+<!-- ELSE -->
+<div th:unless="${check}">
+   <script>alert("Enter Details are wrong")</script>
+</div>
+
+</div> <!-- End Box -->
+  
+</form>
+
+
+  
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+</body>
+</html>

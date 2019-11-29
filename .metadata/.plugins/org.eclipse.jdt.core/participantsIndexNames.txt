@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+E:\DBMS4 PROJECT\InventoryManagement-master\Inventory Management System\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\772502267.index
+\IMS\src\main\java
+E:\DBMS4 PROJECT\InventoryManagement-master\Inventory Management System\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2808764543.index
+\IMS\src\main\java
+E:\DBMS4 PROJECT\InventoryManagement-master\Inventory Management System\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1131403584.index
+\IMS\src\main\java

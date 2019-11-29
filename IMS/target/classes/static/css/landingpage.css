@@ -1,0 +1,135 @@
+@charset "ISO-8859-1";
+
+@import "bourbon";
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+@include keyframes(scrollBad) {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
+}
+@include keyframes(scrollGood) {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  100% {
+    transform: translate3d(0,-320px,0);
+  }
+}
+
+.typewriter {
+    font-family: Courier, monospace;
+	display: inline-block;
+	position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .50s step-end infinite;
+    white-space: nowrap;
+    font-size: 70px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
+
+.pen {
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.panel {
+  padding: 3rem;
+  height: 100%; 
+}
+.top {
+  background-color: #3E69C3;
+  background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+  background-position: center center;
+  background-size: 500px;  
+  @include animation(scrollBad 1s linear infinite);
+}
+.bottom {
+  background-color: #31CC70;
+  overflow: hidden;
+  position: relative;
+  
+  .scroll {
+    background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+    background-position: center center;
+    background-size: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 400%;
+    width: 100%;
+    z-index: 1;
+    @include animation(scrollGood 1s linear infinite);
+  }
+}
+h1 {
+  color: white;
+  font-weight: 400;
+  font-family: sans-serif;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+.example_a {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #2a9c93;
+padding: 30px;
+padding-left :50px;
+padding-right :50px;
+border-radius: 5px;
+font-size:30px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+position : absolute;
+top : 50%;
+left :30%;
+}
+
+.example_a:hover {
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
