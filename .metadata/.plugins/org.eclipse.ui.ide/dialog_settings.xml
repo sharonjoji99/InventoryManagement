@@ -95,6 +95,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\InventoryManagement"/>
 			<item value="V:\dbms\InventoryManagement-master"/>
 			<item value="D:\InventoryManagement-master\IMS\src"/>
 			<item value="D:\InventoryManagement-master\IMS"/>
@@ -108,5 +109,7 @@
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

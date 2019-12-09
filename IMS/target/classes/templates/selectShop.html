@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>shop details</title>
+<link rel="stylesheet" type="text/css" href="https://buddycss-cc55.kxcdn.com/downloads/1.0.7/css/buddy.plugins.min.css">
+<link rel="stylesheet" type="text/css" href="https://buddycss-cc55.kxcdn.com/downloads/1.0.7/css/buddy.min.css">
+<link rel="stylesheet" href="/css/selectShop.css">
+
+</head>
+<body>
+ <div>
+        <h1 style="text-align: center;">Choose Shop</h1>
+ </div>     
+ 
+ 
+       <div class="btn-group vertical btn2">
+            
+            <th:block th:each="sh : ${shop}">
+            <button type="button" class="btn btn2 bg-main-color" th:text="${sh.gets_name()}"></button>
+            </th:block>
+            
+             
+       </div>
+       <br>
+       
+
+       <hr>
+
+       <h2 >Add new shop details</h2>   
+
+    <div class="bg">
+          
+            <div class="shop_form">
+
+               
+        
+                    <form action="#" method="post">
+                           <label class="lbl" for="">Shop name:</label>
+                           
+                          <input class="inp" type="text" name="s_name"><br>
+                          <label class="lbl" for="">Shop ID:</label>
+            
+                          <input class="inp" type="number" name="s_id">
+                          <label class="lbl" for="">Shop location:</label>
+            
+                          <input class="inp" type="text" name="s_loc">
+                          <label class="lbl" for="">Shop manager:</label>
+            
+                          <input class="inp" type="text" name="s_manager">                    
+                          <label class="lbl" for="">Shop phone number:</label>
+            
+                          <input class="inp"  type="number" name="s_phone">
+                          <br>
+                           <input type="submit" class="btn" value="Submit">
+                    </form>
+            
+              </div>
+
+    </div>
+        
+        
+        
+   
+</body>
+</html>
