@@ -18,6 +18,47 @@ body * {
     text-align: center !important;
 }
 
+.shop_form {
+    background-color:#e7e7e7;
+    align-content: center;
+    width: 50%;
+    margin: 5%;
+    margin-left: 25%;
+    margin-top: 3%;
+    padding: 2%;
+    border: 0.5ch solid;
+    
+}
+
+.btn{
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 20%;
+    color: black;
+    background-color:#4CAF50;
+    font-weight: 400;
+    font-size: 150%;
+}
+
+
+
+.lbl{
+    font-weight: bolder;
+    font-size: 110%;
+    margin: 2%;
+    color: #2F4F4F;
+}
+
+.inp{
+    background-color: white;
+    width: 80%;
+    align-content: center;
+    margin-left: 5%;
+}
+
+
+
 img {
     border-radius: 50%;
     height: 60px;

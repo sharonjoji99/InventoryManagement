@@ -3,7 +3,7 @@ import java.sql.*;
 
 public class checkLogin {
  
-	public static boolean flag;
+	public static boolean flag=false;
 	public static void verifyPwd(String u,String p,char role) throws ClassNotFoundException, SQLException{
 		 
 
