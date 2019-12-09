@@ -812,3 +812,18 @@ java.lang.Exception: Project 'IMS' is not open.
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-09 20:01:19.768
 !MESSAGE executing callback sts4.classpath.NraPTgeR SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-09 20:31:46.062
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.NraPTgeR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-09 20:31:46.070
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.NraPTgeR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-09 20:31:46.080
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-09 20:31:46.086
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.NraPTgeR => OK
+
+!ENTRY org.eclipse.ui 2 2 2019-12-09 20:31:46.637
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

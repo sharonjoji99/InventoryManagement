@@ -4816,3 +4816,30 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2019-12-09 14:16:34,074 [Worker-22: Launching ImsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-12-09 14:16:34,074 [Worker-22: Launching ImsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\InventoryManagement\IMS\src\test\resources
 2019-12-09 19:56:29,136 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-12-09 19:57:31,920 [Worker-4: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:IMS:0.0.1-SNAPSHOT @ V:\dbms\InventoryManagement\IMS\pom.xml.
+2019-12-09 19:57:33,414 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 19:57:33,417 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-09 19:57:33,427 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 24 resources
+2019-12-09 19:57:33,430 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 19:57:33,430 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory V:\dbms\InventoryManagement\IMS\src\test\resources
+2019-12-09 19:57:34,877 [Worker-2: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:IMS:0.0.1-SNAPSHOT @ V:\dbms\InventoryManagement\IMS\pom.xml.
+2019-12-09 19:57:35,689 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 19:57:35,693 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-09 19:57:35,703 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 24 resources
+2019-12-09 19:57:35,785 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 19:57:35,786 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory V:\dbms\InventoryManagement\IMS\src\test\resources
+2019-12-09 19:57:36,716 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 19:57:36,716 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-09 19:57:36,716 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-09 19:57:36,718 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 19:57:36,718 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory V:\dbms\InventoryManagement\IMS\src\test\resources
+2019-12-09 20:02:00,314 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 20:02:00,315 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-09 20:02:00,319 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 24 resources
+2019-12-09 20:02:00,322 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 20:02:00,322 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory V:\dbms\InventoryManagement\IMS\src\test\resources
+2019-12-09 20:11:53,993 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 20:11:53,994 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-09 20:11:53,995 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-09 20:11:53,999 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 20:11:53,999 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory V:\dbms\InventoryManagement\IMS\src\test\resources
