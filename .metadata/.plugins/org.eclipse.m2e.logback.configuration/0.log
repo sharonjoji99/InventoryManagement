@@ -4816,6 +4816,7 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2019-12-09 14:16:34,074 [Worker-22: Launching ImsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-12-09 14:16:34,074 [Worker-22: Launching ImsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\InventoryManagement\IMS\src\test\resources
 2019-12-09 19:56:29,136 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+<<<<<<< HEAD
 2019-12-09 19:57:31,920 [Worker-4: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:IMS:0.0.1-SNAPSHOT @ V:\dbms\InventoryManagement\IMS\pom.xml.
 2019-12-09 19:57:33,414 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-12-09 19:57:33,417 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
@@ -4843,3 +4844,18 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2019-12-09 20:11:53,995 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-12-09 20:11:53,999 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-12-09 20:11:53,999 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory V:\dbms\InventoryManagement\IMS\src\test\resources
+=======
+2019-12-09 20:25:20,097 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-12-09 20:25:54,582 [Worker-0: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:IMS:0.0.1-SNAPSHOT @ D:\InventoryManagement\IMS\pom.xml.
+2019-12-09 20:25:55,974 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 20:25:55,977 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-09 20:25:55,999 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 24 resources
+2019-12-09 20:25:56,001 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 20:25:56,002 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\InventoryManagement\IMS\src\test\resources
+2019-12-09 20:25:57,191 [Worker-2: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:IMS:0.0.1-SNAPSHOT @ D:\InventoryManagement\IMS\pom.xml.
+2019-12-09 20:25:59,002 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 20:25:59,007 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-09 20:25:59,016 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 24 resources
+2019-12-09 20:25:59,078 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-09 20:25:59,078 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\InventoryManagement\IMS\src\test\resources
+>>>>>>> f58add575ae077553de884650b1415acb33b5eb7

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.131+V:\dbms\InventoryManagement\.metadata\.plugins\org.eclipse.jdt.core
 2803922778.index
 2880075556.index
@@ -64,3 +65,8 @@ INDEX VERSION 1.131+V:\dbms\InventoryManagement\.metadata\.plugins\org.eclipse.j
 3855135705.index
 3996582761.index
 2712560930.index
+=======
+INDEX VERSION 1.131+D:\InventoryManagement\.metadata\.plugins\org.eclipse.jdt.core
+1751246927.index
+1925254937.index
+>>>>>>> f58add575ae077553de884650b1415acb33b5eb7
