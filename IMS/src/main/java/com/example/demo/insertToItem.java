@@ -19,7 +19,7 @@ public class insertToItem {
         	 con = DriverManager.getConnection(url,user,password);
              System.out.println("connection estallished to Database ");
            
-             PreparedStatement stmt=con.prepareStatement("insert into ims_inventory values (?,?,?,?,?,?)");
+             PreparedStatement stmt=con.prepareStatement("insert into ims_inventory values (?,?,?,?,?,?,?)");
              stmt.setString(1,category);
         	 stmt.setInt(2,p_id);
         	 stmt.setString(3,p_name);

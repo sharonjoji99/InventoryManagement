@@ -5,7 +5,10 @@ import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -260,7 +263,7 @@ public class AppController {
 	 @Controller
 	 public class itemController{
 		   @GetMapping("/inventory")
-		   String selectShop(Model model){
+		   String selectItem(Model model){
 			  
 			   System.out.println("You have entered Items page ");
 			   ArrayList <inventory> test= fetchItems.fetchAllItems();
@@ -281,11 +284,11 @@ public class AppController {
 		   }
 		   
 		   @PostMapping("/inventory")
-		   String selectShopPost(Model model,@RequestParam("p_id") int p_id,@RequestParam("quantity") int quantity,@RequestParam("opt1") boolean inc) {
+		   String itemIncrease(Model model,@RequestParam("p_id") int p_id,@RequestParam("quantity") int quantity) {
 			   System.out.println("Enetered Details : quantity:"+quantity+"  p_id:"+p_id); 
 			   try {
 				   
-				    System.out.println(inc);
+				
 				    if(true) {
 					increaseQuantity.addQuantity(p_id,quantity);
 				    }else {
@@ -302,14 +305,43 @@ public class AppController {
 			   return "items.html";
 			   
 		   }
-		   
-		   
-		    }	
+
+		  
+	 }
 	 
+	 
+	 @Controller
+	 public class itemController2{
+        @PostMapping("/inventoryAdd")
+	 String itemAdd(Model model,@RequestParam("p_id") int p_id,@RequestParam("quantity") int quantity,@RequestParam("p_name") String p_name,@RequestParam("p_mrp") int p_mrp,@RequestParam("discount") int discount,@RequestParam("category") String category) {
+        	
+			   System.out.println("Enetered Details : p_name:"+p_name+"  p_id:"+p_id);
+			   float dp=(float)p_mrp-(((float)discount/(float)100)*(float)p_mrp);	   
+			   
+			   try {
+				insertToItem.insertItem(p_name, p_id, category, quantity, p_mrp, discount, dp);
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	 
+	 
+	 
+	 return "redirect:/inventory";
+	 }
+
+
+
+
+	 }}
+
 	 
 	
 		 
-	 }
+	 
 	 
 
 
