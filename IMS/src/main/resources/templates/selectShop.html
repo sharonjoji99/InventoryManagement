@@ -5,7 +5,7 @@
 <title>shop details</title>
 <link rel="stylesheet" type="text/css" href="https://buddycss-cc55.kxcdn.com/downloads/1.0.7/css/buddy.plugins.min.css">
 <link rel="stylesheet" type="text/css" href="https://buddycss-cc55.kxcdn.com/downloads/1.0.7/css/buddy.min.css">
-<link rel="stylesheet" href="/css/selectShop.css">
+ <link rel="stylesheet" href="/css/selectShop.css">
 
 </head>
 <body>
@@ -17,7 +17,9 @@
        <div class="btn-group vertical btn2">
             
             <th:block th:each="sh : ${shop}">
-            <button type="button" class="btn btn2 bg-main-color" th:text="${sh.gets_name()}"></button>
+            <form action="/shopChoice" method="POST">
+                     <button type="submit" class="btn btn2 bg-main-color" name="choice" th:value="${sh.gets_id()}" th:text="${sh.gets_name()}"></button>
+            </form>
             </th:block>
             
              

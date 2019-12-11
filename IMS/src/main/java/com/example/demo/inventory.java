@@ -9,8 +9,9 @@ public class inventory {
 	 private int discount;
 	 private float discounted_price;
 	 private int quantity;
+	 private int s_id;
 	 
-	 public inventory(String a,int b,String c,int d,int e,float f,int g) {
+	 public inventory(String a,int b,String c,int d,int e,float f,int g,int h) {
 		 category=a;
 		 p_id=b;
 		 p_name=c;
@@ -18,6 +19,7 @@ public class inventory {
 		 discount=e;
 		 discounted_price=f;
 		 quantity=g;
+		 s_id=h;
 	 }
 	 
 	  public String getcategory() {
@@ -56,7 +58,15 @@ public class inventory {
 				  public void setp_mrp(int p_mrp) {
 						 this.p_mrp=p_mrp;
 					 }
+
 				  
+				  public int gets_id() {
+						 return s_id;
+					 }
+					  
+					  public void sets_id(int s_id) {
+							 this.s_id=s_id;
+						 }
 				  
 				  
 				  public int getdiscount() {

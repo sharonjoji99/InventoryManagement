@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 
 public class fetchItems {
-public static ArrayList<inventory> fetchAllItems() {
+public static ArrayList<inventory> fetchAllItems(int ch,boolean b) {
 		
 
         String url      = "jdbc:oracle:thin:@127.0.0.1:1521:XE";   //database specific url.
@@ -21,18 +21,34 @@ public static ArrayList<inventory> fetchAllItems() {
         try
         {   
         	
-        	 con = DriverManager.getConnection(url,user,password);
-             System.out.println("connection estallished for fetch Items");
+        	con = DriverManager.getConnection(url,user,password);
+            System.out.println("connection estallished for fetch Items");
+        	if(b==true) {
+        		PreparedStatement stmt=con.prepareStatement("SELECT category,s_id,p_id,p_name,p_mrp,discount,discounted_price,quantity from ims_inventory where s_id=?");
+        		stmt.setInt(1,ch);
+        		 ResultSet result = stmt.executeQuery();
+        		 while(result.next()) {
+                 	
+                 	itemSet.add(new inventory(result.getString("category"),result.getInt("p_id"),result.getString("p_name"),result.getInt("p_mrp"),result.getInt("discount"),result.getFloat("discounted_price"),result.getInt("quantity"),result.getInt("s_id")));
+                  
+                 
+             }
+        		
+        	}
+        	 
+        	else {
              PreparedStatement stmt=con.prepareStatement("SELECT * from ims_inventory");
              ResultSet result = stmt.executeQuery();
-            
-                           
+             
              while(result.next()) {
             	
-            	itemSet.add(new inventory(result.getString("category"),result.getInt("p_id"),result.getString("p_name"),result.getInt("p_mrp"),result.getInt("discount"),result.getFloat("discounted_price"),result.getInt("quantity")));
+            	 itemSet.add(new inventory(result.getString("category"),result.getInt("p_id"),result.getString("p_name"),result.getInt("p_mrp"),result.getInt("discount"),result.getFloat("discounted_price"),result.getInt("quantity"),result.getInt("s_id")));
+                 
              
-            
-        }
+         }
+        	}
+                           
+           
         }
         catch(Exception ex) 
         { 

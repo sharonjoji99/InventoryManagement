@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 
@@ -264,9 +265,10 @@ public class AppController {
 	 public class itemController{
 		   @GetMapping("/inventory")
 		   String selectItem(Model model){
-			  
+			  int ch=1;
+			  boolean b=false;
 			   System.out.println("You have entered Items page ");
-			   ArrayList <inventory> test= fetchItems.fetchAllItems();
+			   ArrayList <inventory> test= fetchItems.fetchAllItems(ch,b);
                inventory obj[]=new inventory[test.size()];
 			   
 			   for (int i = 0; i < test.size(); i++) 
@@ -313,13 +315,13 @@ public class AppController {
 	 @Controller
 	 public class itemController2{
         @PostMapping("/inventoryAdd")
-	 String itemAdd(Model model,@RequestParam("p_id") int p_id,@RequestParam("quantity") int quantity,@RequestParam("p_name") String p_name,@RequestParam("p_mrp") int p_mrp,@RequestParam("discount") int discount,@RequestParam("category") String category) {
+	 String itemAdd(Model model,@RequestParam("p_id") int p_id,@RequestParam("quantity") int quantity,@RequestParam("p_name") String p_name,@RequestParam("p_mrp") int p_mrp,@RequestParam("s_id") int s_id,@RequestParam("discount") int discount,@RequestParam("category") String category) {
         	
 			   System.out.println("Enetered Details : p_name:"+p_name+"  p_id:"+p_id);
 			   float dp=(float)p_mrp-(((float)discount/(float)100)*(float)p_mrp);	   
 			   
 			   try {
-				insertToItem.insertItem(p_name, p_id, category, quantity, p_mrp, discount, dp);
+				insertToItem.insertItem(p_name, p_id, category, quantity, p_mrp, discount,dp,s_id);
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -336,7 +338,118 @@ public class AppController {
 
 
 
-	 }}
+	 }
+	 
+	 @Controller
+	 public class employeeListController{
+		   @GetMapping("/employeeList")
+		   String selectItem(Model model){
+			  
+			   System.out.println("You have entered employee page ");
+			   ArrayList <employeeDetails> test= fetchEmployee.fetchAllEmployees();
+			   employeeDetails obj[]=new employeeDetails[test.size()];
+			   
+			   for (int i = 0; i < test.size(); i++) 
+		        { 
+		          
+		  
+		            obj[i] = test.get(i); 
+		  
+		          
+		  
+		        }
+			   model.addAttribute("emp", obj);
+			   
+			   //return("items.html");
+			   
+			   return("employee.html");
+		   }
+	 
+  }
+	 
+	 
+	
+	 @Controller
+	 public class OwnerControlController{
+		   @GetMapping("/ownerControl")
+		   String selectItem(Model model){
+			  
+			   System.out.println("You have Owner Control page ");
+			   ArrayList <ownerDetails> test= fetchOwner.fetchAllOwners();
+			   ownerDetails obj[]=new ownerDetails[test.size()];
+			   
+			   for (int i = 0; i < test.size(); i++) 
+		        { 
+		          
+		  
+		            obj[i] = test.get(i); 
+		  
+		          
+		  
+		        }
+			   model.addAttribute("own", obj);
+			   
+			 
+			   
+			   
+	
+			   
+			   return("owner.html");
+		   }
+		  
+		   
+		   @PostMapping("/ownerControl")
+		   String selectItem(Model model,@RequestParam("username") String username,@RequestParam("s_id") int s_id,@RequestParam("salary") int salary,@RequestParam("points") int points ){
+			  
+			   
+			   System.out.println("You have Owner Control page ");
+			   
+			   insertToemp_shop.updateEmployee(username,s_id,salary,points);
+			   
+			   
+			
+			   
+			   return("redirect:/ownerControl");
+		   }
+		   
+		   
+	 
+  }
+	 
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	 @Controller
+	 public class ShopChooseController{
+	
+     @PostMapping("/shopChoice")
+	 String shopChoice(Model model,@RequestParam("choice") int ch) {
+    	 System.out.println(ch);
+    	 boolean b=true;
+    	 
+    	 System.out.println("You have entered Items page ");
+		   ArrayList <inventory> test= fetchItems.fetchAllItems(ch, b);
+         inventory obj[]=new inventory[test.size()];
+		   
+		   for (int i = 0; i < test.size(); i++) 
+	        { 
+	          
+	  
+	            obj[i] = test.get(i); 
+	  
+	          
+	  
+	        }
+		   model.addAttribute("item",obj);
+    	 return ("/shopChoice");
+     }
+}
+	 
+}
 
 	 
 	

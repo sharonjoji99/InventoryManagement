@@ -46,21 +46,12 @@
        
 
        <hr>
+
+
 <div id="form">
-       <h2 >Add new item details</h2>   
-<form action="/inventory" method="post">
-    <div class="bg">
-          
-          
-          
-          
-            <div class="add_quantity">
-
-
-
-               
-                     
-        
+        <div class="add_quantity form2">
+                <h2 >Increase quantity of items</h2>   
+                
                    <form action="/inventory" method="post">
                            <label class="lbl" for="">Product ID:</label>
                            <input class="inp" type="number" name="p_id"><br>
@@ -75,12 +66,13 @@
                            <input type="submit" class="btn" value="Add quantity">
                     </form>
             
-              </div>
-               <div class="add_item">
+        </div>
 
-           
+        <div class="add_item form2">
+
+                <h2 >Add new item details</h2> 
         
-                    <form action="/inventoryAdd" method="post">
+                <form action="/inventoryAdd" method="post">
                           
                           <label class="lbl" for="">Product name:</label>
                            
@@ -89,30 +81,42 @@
                           <label class="lbl" for="">Product ID:</label>
             
                           <input class="inp" type="number" name="p_id">
+                          <br>
                           
                           <label class="lbl" for="">Product price:</label>
             
                           <input class="inp" type="number" name="p_mrp">
+                          <br>
+
                           <label class="lbl" for="">Discount:</label>
             
-                          <input class="inp" type="number" name="discount">                    
+                          <input class="inp" type="number" name="discount">  
+                          <br>                  
                           
                           <label class="lbl" for="">Quantity:</label>
             
                           <input class="inp"  type="number" name="quantity">
+                          <br>
                           
                           <label class="lbl" for="">Category :</label>
             
                           <input class="inp"  type="text" name="category">
+                          
+                          
+                          <br>
+                          <label class="lbl" for="">Shop id  :</label>
+            
+                          <input class="inp"  type="number" name="s_id">
                           <br>
                            <input type="submit" class="btn" value="Submit">
-                    </form>
+                           <br>
+                </form>
             
-    			</div>
-        </div>
+    	</div>
+</div>
 </form>                
 
-  </div>  
+</div>  
           
 
 </body>

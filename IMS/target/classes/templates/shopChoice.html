@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <link rel="stylesheet" href="/css/items.css">
+
+</head>
+<body>
+       <div class="table-users">
+                <div class="header" >INVENTORY (shop wise)</div>
+                
+                <table cellspacing="0">
+                   <tr>
+                      <th>Category</th>
+                      <th>Item ID</th>
+                      <th>Item Name</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Discount</th>
+                      <th>Discounted Price</th>
+                      
+                   </tr>
+             
+                    <th:block th:each="it : ${item}">
+                            <tr>
+                                    <td th:text="${it.getcategory()}"/></td>
+                                    <td th:text="${it.getp_id()}"></td>
+                                    <td th:text="${it.getp_name()}"></td>
+                                    <td th:text="${it.getp_mrp()}"></td>
+                                     <td th:text="${it.getquantity()}"></td>
+                                    <td th:text="${it.getdiscount()}"></td>
+                                    <td id="dp" th:text="${it.getdiscounted_price()}"></td>
+                                  </tr>
+                    </th:block>
+
+                   
+             
+
+                </table>
+             </div>
+</body>
+</html>

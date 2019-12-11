@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>employee</title>
-    <link rel="stylesheet" href="css/employee.css">
+    <link rel="stylesheet" href="/css/employee.css">
 </head>
 <body>
 
 
-    <!-- th from heeeree -->
+    <!-- th from heeeree -->   
+    
+    
+    
+    
     <div class="center">
-
+      <th:block th:each="em : ${emp}">
         <div class="card">
           <div class="additional">
             <div class="user-card">
               <div class="level center">
-                 <p>Level 13</p> 
+                 <p>Level <span th:text="${em.getpoints()}"></span> </p> 
               </div>
               <div class="points center">
                 <p>pts</p>
@@ -80,41 +84,42 @@
               </svg>
             </div>
             <div class="more-info">
-                    <h1>Employee ID here </h1>
+            
+                    <h1 th:text="${em.getusername()}"></h1>
                     <div class="coords">
                       <span>Employee Name</span>
                       <span>Shop asssigned</span>
                     </div>
                     <div class="coords">
-                      <span>insert name here</span>
-                      <span>insert shop here</span>
+                      <span th:text="${em.getname()}">insert name here</span>
+                      <span th:text="${em.gets_id()}">insert shop here</span>
                     </div>
                     <div class="stats">
                       <div>
                         <div class="title">Emp_id</div>
                         <i class="fa fa-trophy"></i>
-                        <div class="value">2</div>
+                        <div class="value" th:text="${em.getusername()}"></div>
                       </div>
                       <div>
                         <div class="title">Year of join</div>
                         <i class="fa fa-gamepad"></i>
-                        <div class="value">yyyy</div>
+                        <div class="value">2019</div>
                       </div>
                   
                     </div>
             </div>
           </div>
           <div class="general">
-            <h1>Employee id here</h1>
+            <h1 th:text="${em.getusername()}"></h1>
         <p>
-            <h3>Employee name here</h3>
+            <h3 th:text="${em.getname()}"></h3>
         </p>
             <span class="more"></span>
           </div>
         </div>
       
         
-      
+      </th:block>
       </div>
 
 <!-- th till heree-->

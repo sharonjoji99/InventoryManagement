@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ownerAccess</title>
+ <link href='css/owner.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+<div class="content">
+    <h2>Owners</h2>
+    
+    
+    
+    <th:block th:each="ow : ${own}">
+    <div class="card">
+        <div class="firstinfo"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/mrvanz/128.jpg" />
+            <div class="profileinfo">
+                <h1 th:text="${ow.getusername()}"></h1>
+                <h3 th:text="${ow.getph_no()}"></h3>
+                <p class="bio" th:text="${ow.getemail()}"> </p>
+            </div>
+        </div>
+    </div>
+      </th:block>
+    
+    
+    
+    <div class="badgescard"> <span class="devicons devicons-django"></span><span class="devicons devicons-python"> </span><span class="devicons devicons-codepen"></span><span class="devicons devicons-javascript_badge"></span><span class="devicons devicons-gulp"></span><span class="devicons devicons-angular"></span>
+        <span
+            class="devicons devicons-sass"> </span>
+    </div>
+</div>
+<div class="right">
+
+    <div class="bg">
+          
+            <div class="shop_form">
+
+                <h2 >EDIT EMPLOYEE DETAILS</h2>   
+
+        
+                    <form action="#" method="post">
+                           <label class="lbl" for="">Employee ID : </label>
+                           
+                          <input class="inp" type="text" name="username"><br>
+                          
+                          <label class="lbl" for="">Shop ID:</label>
+            
+                          <input class="inp" type="number" name="s_id">
+                          
+                          <label class="lbl" for="">Salary:</label>
+            
+                          <input class="inp" type="number" name="salary">
+                          <label class="lbl" for="">Points :</label>
+                          <input class="inp" type="number" name="points">
+                          <br>
+                           <input type="submit" class="btn" value="Submit">
+                    </form>
+            
+              </div>
+
+    
+
+
+</div>
+</body>
+</html>
